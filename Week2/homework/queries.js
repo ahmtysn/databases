@@ -33,11 +33,4 @@ const queries = [
   minAndMaxH_Index
 ];
 
-module.exports = {
-  numOfAuthorsOnResearch,
-  femaleResearchers,
-  avgH_index,
-  sumPapersPerUniversities,
-  minAndMaxH_Index,
-  queries
-};
+module.exports = { queries };
