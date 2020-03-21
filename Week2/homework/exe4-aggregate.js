@@ -3,7 +3,8 @@ const {
   femaleResearchers,
   avgH_index,
   sumPapersPerUniversities,
-  minAndMaxH_Index
+  minAndMaxH_Index,
+  queries: queries
 } = require("./queries");
 const mysql = require("mysql");
 const util = require("util");
@@ -21,11 +22,7 @@ const execQuery = util.promisify(connection.query.bind(connection));
 async function seedDatabase() {
   await connect();
   try {
-    console.table(await execQuery(numOfAuthorsOnResearch));
-    console.table(await execQuery(femaleResearchers));
-    console.table(await execQuery(avgH_index));
-    console.table(await execQuery(sumPapersPerUniversities));
-    console.table(await execQuery(minAndMaxH_Index));
+    queries.forEach(async query => console.table(await execQuery(query)));
     connection.end();
   } catch (err) {
     console.error(err);
