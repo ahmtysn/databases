@@ -24,6 +24,7 @@ GROUP BY a.university`;
 const minAndMaxH_Index = `SELECT university,min(h_index) as min_point, max(h_index) as max_point
 FROM authors
 GROUP BY university;`;
+
 const queries = [
   numOfAuthorsOnResearch,
   femaleResearchers,

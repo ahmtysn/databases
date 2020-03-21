@@ -1,13 +1,13 @@
+const mysql = require("mysql");
+const util = require("util");
 const {
   numOfAuthorsOnResearch,
   femaleResearchers,
   avgH_index,
   sumPapersPerUniversities,
   minAndMaxH_Index,
-  queries: queries
+  queries
 } = require("./queries");
-const mysql = require("mysql");
-const util = require("util");
 
 const connection = mysql.createConnection({
   host: "localhost",
