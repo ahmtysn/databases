@@ -12,8 +12,8 @@ const connection = mysql.createConnection({
 
 const namesFriends = `SELECT A1.author_name AS Authors, A2.author_name AS Friends 
 FROM authors AS A1
-LEFT JOIN authors AS A2
-on A1.author_no = A2.friend`;
+INNER JOIN authors AS A2
+on A2.author_no = A1.friend`;
 
 const authorsTitles = `SELECT A.author_name AS Names, P.paper_title AS Titles
 FROM authors AS A
