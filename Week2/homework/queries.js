@@ -1,11 +1,11 @@
-const numOfAuthorsOnResearch = `SELECT DISTINCT(author_name) as Names 
+const numOfAuthorsOnResearch = `SELECT COUNT(DISTINCT(author_name)) as Names 
 FROM papers p
 RIGHT JOIN relations r
 ON p.paper_id = r.paper_id
 LEFT JOIN authors a
 ON a.author_no = r.author_id`;
 
-const femaleResearchers = `SELECT COUNT(DISTINCT(author_name)) as Counts_of_Female_Researchers
+const femaleResearchers = `SELECT COUNT(DISTINCT(author_no)) as Counts_of_Female_Researchers
 FROM authors a
 LEFT JOIN relations r
 ON a.author_no = r.author_id
@@ -15,9 +15,9 @@ const avgH_index = `SELECT university, AVG(h_index) from authors GROUP BY univer
 
 const sumPapersPerUniversities = `SELECT a.university, COUNT(r.paper_id) as Sum_Research
 FROM relations r
-LEFT JOIN papers p
+JOIN papers p
 ON r.paper_id = p.paper_id
-LEFT JOIN authors a
+JOIN authors a
 ON a.author_no = r.author_id
 GROUP BY a.university`;
 
