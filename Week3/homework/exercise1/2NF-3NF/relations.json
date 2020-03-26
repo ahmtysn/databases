@@ -1,0 +1,97 @@
+[
+  {
+    "member_id": 1,
+    "dinner_id": "D00001001",
+    "food_id": 1
+  },
+  {
+    "member_id": 1,
+    "dinner_id": "D00001001",
+    "food_id": 2
+  },
+  {
+    "member_id": 2,
+    "dinner_id": "D00001002",
+    "food_id": 8
+  },
+  {
+    "member_id": 2,
+    "dinner_id": "D00001002",
+    "food_id": 2
+  },
+  {
+    "member_id": 3,
+    "dinner_id": "D00001002",
+    "food_id": 8
+  },
+  {
+    "member_id": 3,
+    "dinner_id": "D00001002",
+    "food_id": 2
+  },
+  {
+    "member_id": 4,
+    "dinner_id": "D00001003",
+    "food_id": 6
+  },
+  {
+    "member_id": 4,
+    "dinner_id": "D00001003",
+    "food_id": 9
+  },
+  {
+    "member_id": 4,
+    "dinner_id": "D00001003",
+    "food_id": 5
+  },
+  {
+    "member_id": 5,
+    "dinner_id": "D00001003",
+    "food_id": 6
+  },
+  {
+    "member_id": 5,
+    "dinner_id": "D00001003",
+    "food_id": 9
+  },
+  {
+    "member_id": 5,
+    "dinner_id": "D00001003",
+    "food_id": 5
+  },
+  {
+    "member_id": 6,
+    "dinner_id": "D00001004",
+    "food_id": 3
+  },
+  {
+    "member_id": 6,
+    "dinner_id": "D00001004",
+    "food_id": 5
+  },
+  {
+    "member_id": 7,
+    "dinner_id": "D00001005",
+    "food_id": 4
+  },
+  {
+    "member_id": 7,
+    "dinner_id": "D00001005",
+    "food_id": 7
+  },
+  {
+    "member_id": 8,
+    "dinner_id": "D00001003",
+    "food_id": 6
+  },
+  {
+    "member_id": 8,
+    "dinner_id": "D00001003",
+    "food_id": 9
+  },
+  {
+    "member_id": 8,
+    "dinner_id": "D00001003",
+    "food_id": 5
+  }
+]
