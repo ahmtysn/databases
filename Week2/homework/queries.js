@@ -1,15 +1,15 @@
-const numOfAuthorsOnResearch = `SELECT COUNT(DISTINCT(author_name)) as Names 
-FROM papers p
-RIGHT JOIN relations r
-ON p.paper_id = r.paper_id
-LEFT JOIN authors a
-ON a.author_no = r.author_id`;
+// i hope it's ok now :)
+const numOfAuthorsOnResearch = `select count(r.author_id), r.paper_id, p.paper_title 
+from relations r 
+left join papers p 
+on r.paper_id = p.paper_id 
+group by r.paper_id;`;
 
-const femaleResearchers = `SELECT COUNT(DISTINCT(author_no)) as Counts_of_Female_Researchers
-FROM authors a
-LEFT JOIN relations r
-ON a.author_no = r.author_id
-WHERE gender = 'f'`;
+const femaleResearchers = `select a.gender, count(r.paper_id) 
+from relations r 
+inner join authors a 
+on r.author_id = a.author_no 
+where a.gender ='f';`;
 
 const avgH_index = `SELECT university, AVG(h_index) from authors GROUP BY university`;
 
