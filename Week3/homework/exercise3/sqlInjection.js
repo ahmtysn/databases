@@ -13,7 +13,6 @@ connection.connect(err => {
 });
 
 function getPopulation(Country, name, cb) {
-  // assuming that connection to the database is established and stored as conn
   connection.query(
     `SELECT Population FROM ${Country} WHERE Name = ?`,
     name,
